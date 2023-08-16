@@ -429,6 +429,9 @@
     </section>
   </section>
 
+  <!-- Diagram overview -->
+  <xi:include href="overview.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <!--Conformance section should go last, but it seems to make better sense here -->
   <xi:include href="conformance/conformance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+                         "http://www.docbook.org/xml/4.5/docbookx.dtd" [
+                         <!ENTITY % xinclude SYSTEM "docbook/xinclude.mod" >
+                         %xinclude;
+                         <!ENTITY % local.common.attrib "xml:base CDATA #IMPLIED" >
+]>
+
+<section id="overview">
+  <title>DMLex Overview</title>
+  <section id="diagram_nvh">
+	<title>DMLex plaintext description</title>
+	<para>This description uses the <ulink url="https://www.namevaluehierarchy.org/schema.html">NVH schema notation style</ulink> and the convention that all object types and their properties are prefixed by either <literal>core@</literal> or <literal>MODULENAME@</literal> strings. Their arity is denoted by a <literal>*</literal> (zero or more), <literal>+</literal> (one or more), <literal>?</literal> (zero or one) or <literal>N+</literal> (<literal>N</literal> or more). If no arity is given, it indicates the arity of 1, i.e. being required and occurring exactly once.
+	</para>
+    <programlisting>
+      <xi:include href="dmlex.nvh" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </programlisting>
+  </section>
+  <section id="diagram_uml">
+    <title>DMLex UML diagram</title>
+    <graphic fileref="dmlex_uml.svg" contentwidth="16cm"/>
+  </section>
+</section>
